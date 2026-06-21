@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natijalar</title>
+</head>
+<body>
+
+<h2>"{{ query }}" bo'yicha natijalar</h2>
+
+<a href="/">Orqaga</a>
+
+<hr>
+
+{% for r in results %}
+
+<p>
+<b>{{ r.file }}</b><br>
+
+{{ r.left }}
+<b style="color:red">{{ r.keyword }}</b>
+{{ r.right }}
+
+</p>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
